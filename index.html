@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>نوبت آنلاین</title>
+
+  <!-- دو فونت جدا: عنوان هنری، متن‌ها ساده -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lalezar&family=Vazirmatn:wght@400&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    html, body {
+      width: 100%;
+      min-height: 100%;
+      margin: 0;
+    }
+
+    body {
+      min-height: 100vh;
+      min-height: 100svh;
+      background: rgb(252, 177, 235);
+      color: #000;
+      overflow: hidden;
+    }
+
+    .page {
+      position: relative;
+      width: 100%;
+      min-height: 100vh;
+      min-height: 100svh;
+    }
+
+    .content {
+      position: absolute;
+      top: 34.5%;
+      left: 50%;
+      width: 100%;
+      padding: 0 16px;
+      transform: translateX(-50%);
+      text-align: center;
+    }
+
+    h1 {
+      margin: 0;
+      font-family: "Lalezar", sans-serif;
+      font-size: clamp(43px, 5.35vw, 50px);
+      font-weight: 400;
+      line-height: 1.2;
+    }
+
+    .subtitle,
+    .coming-soon {
+      font-family: "Vazirmatn", Tahoma, sans-serif;
+      font-weight: 400;
+    }
+
+    .subtitle {
+      margin: 26px 0 0;
+      font-size: clamp(19px, 2.55vw, 24px);
+      line-height: 1.6;
+    }
+
+    .coming-soon {
+      margin: 114px 0 0;
+      font-size: clamp(13px, 1.7vw, 16px);
+      line-height: 1.6;
+    }
+
+    @media (max-width: 600px) {
+      .content {
+        top: 34.5%;
+      }
+
+      h1 {
+        font-size: clamp(38px, 11.5vw, 48px);
+      }
+
+      .subtitle {
+        margin-top: 22px;
+        font-size: clamp(17px, 5.3vw, 22px);
+      }
+
+      .coming-soon {
+        margin-top: 98px;
+        font-size: 14px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <main class="page">
+    <section class="content">
+      <h1>نوبت آنلاین</h1>
+      <p class="subtitle">آنلاین نوبت بگیر و آنلاین نوبت بده!</p>
+      <p class="coming-soon">به زودی...</p>
+    </section>
+  </main>
+</body>
+</html>
